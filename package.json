@@ -1,0 +1,32 @@
+{
+  "name": "@gzzhanghao/quill-export",
+  "version": "0.1.0",
+  "main": "lib",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "watch": "babel src -d lib --watch",
+    "prepare": "npm run build"
+  },
+  "author": "Jason <jason.daurus@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzzhanghao/quill-export.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gzzhanghao/quill-export/issues"
+  },
+  "homepage": "https://github.com/gzzhanghao/quill-export#readme",
+  "description": "",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.2"
+  },
+  "dependencies": {
+    "officegen": "^0.4.5",
+    "units-css": "^0.4.0"
+  }
+}
