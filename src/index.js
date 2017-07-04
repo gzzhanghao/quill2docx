@@ -43,7 +43,7 @@ export default async function convert(delta, opts) {
       const attributes = op.attributes || {}
 
       if (typeof op.insert !== 'string') {
-        options.handleCustomOperation(p, op)
+        await options.handleCustomOperation(p, op)
         continue
       }
 
