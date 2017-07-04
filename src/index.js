@@ -29,13 +29,21 @@ export default async function convert(delta, opts) {
       align = 'justify'
     }
 
-    const p = docx.createP({ align })
+    let p = null
+
+    if (attributes.list === 'bullet') {
+      p = docx.createListOfDots({ align })
+    } else if (attributes.list === 'ordered') {
+      p = docx.createListOfNumbers({ align })
+    } else {
+      p = docx.createP({ align })
+    }
 
     for (const op of line.ops) {
       const attributes = op.attributes || {}
 
       if (typeof op.insert !== 'string') {
-        handleCptions.customOperation(p, op)
+        options.handleCustomOperation(p, op)
         continue
       }
 
