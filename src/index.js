@@ -48,14 +48,15 @@ export default async function convert(delta, opts) {
       }
 
       const props = {
-
-        // only hex color are supported
-        color: attributes.color.slice(1),
         link: attributes.link,
-
         bold: attributes.bold,
         italic: attributes.italic,
         underline: attributes.underline,
+      }
+
+      // only hex color are supported
+      if (attributes.color) {
+        props.color = attributes.color.slice(1)
       }
 
       // officegen accepts font_size in points
