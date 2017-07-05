@@ -1,6 +1,6 @@
 {
-  "name": "@gzzhanghao/quill-export",
-  "version": "0.1.3",
+  "name": "@gzzhanghao/quill2docx",
+  "version": "0.1.4",
   "main": "lib",
   "files": [
     "lib"
@@ -14,12 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gzzhanghao/quill-export.git"
+    "url": "git+https://github.com/gzzhanghao/quill2docx.git"
   },
   "bugs": {
-    "url": "https://github.com/gzzhanghao/quill-export/issues"
+    "url": "https://github.com/gzzhanghao/quill2docx/issues"
   },
-  "homepage": "https://github.com/gzzhanghao/quill-export#readme",
+  "homepage": "https://github.com/gzzhanghao/quill2docx#readme",
   "description": "",
   "devDependencies": {
     "babel-cli": "^6.24.1",
