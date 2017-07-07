@@ -49,9 +49,9 @@ export default async function convert(delta, opts) {
 
       const props = {
         link: attributes.link,
-        bold: attributes.bold,
-        italic: attributes.italic,
-        underline: attributes.underline,
+        bold: !!attributes.bold,
+        italic: !!attributes.italic,
+        underline: attributes.underline && 'single',
       }
 
       // only hex color are supported
