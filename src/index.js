@@ -1,5 +1,6 @@
 import units from 'units-css'
 import officegen from 'officegen'
+import { encodeXML } from 'entities'
 
 const DEFAULT_OPTIONS = {
   handleCustomOperation() {},
@@ -48,7 +49,7 @@ export default async function convert(delta, opts) {
       }
 
       const props = {
-        link: attributes.link,
+        link: encodeXML(attributes.link),
         bold: !!attributes.bold,
         italic: !!attributes.italic,
         underline: attributes.underline && 'single',

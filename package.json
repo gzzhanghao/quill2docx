@@ -1,6 +1,6 @@
 {
   "name": "@gzzhanghao/quill2docx",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib",
   "files": [
     "lib"
@@ -26,6 +26,7 @@
     "babel-preset-env": "^1.5.2"
   },
   "dependencies": {
+    "entities": "^1.1.1",
     "officegen": "^0.4.5",
     "units-css": "^0.4.0"
   }
