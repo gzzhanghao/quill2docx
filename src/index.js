@@ -49,7 +49,7 @@ export default async function convert(delta, opts) {
       }
 
       const props = {
-        link: encodeXML(attributes.link),
+        link: attributes.link && encodeXML(attributes.link),
         bold: !!attributes.bold,
         italic: !!attributes.italic,
         underline: attributes.underline && 'single',
